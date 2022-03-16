@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: 'Lato',sans-serif;
     overflow-x: hidden;
-    width: 100%;
 }
 
 .max-width{
@@ -22,7 +21,6 @@
     padding: 15px 0;
     background-color: transparent;
     transition: all 0.3s ease;
-    overflow-y: hidden;
 }
 .navbar.sticky{
     padding: 0px 0;
