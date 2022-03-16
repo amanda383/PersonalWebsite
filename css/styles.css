@@ -88,7 +88,7 @@
     display: flex;
     font-size: 50px; 
     font-weight: 300;
-    margin-left: 56px;
+    margin-left: 45px;
 }
 
 
@@ -294,6 +294,7 @@ section{
         font-size: 30px; 
         justify-content: flex-start;
         align-items: flex-start;
+        margin-left: 55px;
     }
 
     .icons{
