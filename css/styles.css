@@ -244,7 +244,6 @@ section{
     
     .max-width{
         padding: 0 50px;
-        width: 100%;
     }
 
     .menu-btn{
@@ -304,7 +303,7 @@ section{
     }
 
     .about .about-content .column{
-        width: 50%;
+        width: 100%;
     }
 
     .about .about-content .left{
@@ -313,8 +312,12 @@ section{
         margin: 0 auto 60px;
     }
 
+    .about .about-content .right{
+        flex: 100%;
+    }
+
     .max-width{
         max-width: 800px;
-        
+
     }
 }
