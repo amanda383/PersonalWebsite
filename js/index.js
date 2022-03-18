@@ -27,4 +27,13 @@ $(document).ready(function(){
             scrollTop: $("#Home").offset().top
         }, 1000);
     });
+    $(".nav-experiences").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#Experiences").offset().top
+        }, 1000);
+    });
+
+    $('.menu a').click(function(){
+        $(".menu").collapse('hide');
+    });
 })
