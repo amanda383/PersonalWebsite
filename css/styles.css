@@ -171,8 +171,8 @@ section{
 }
 
 .about .about-content .right p{
-    /* display: flex;
-    flex-wrap: wrap; */
+    display: flex;
+    flex-wrap: wrap;
     text-align: justify;
     word-break: break-all;
     
