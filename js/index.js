@@ -1,3 +1,9 @@
+var script = document.createElement('script');
+src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"
+script.type = 'text/javascript';
+document.getElementsByTagName('head')[0].appendChild(script);
 
 $(document).ready(function(){
     $(window).scroll(function(){
