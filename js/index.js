@@ -25,6 +25,9 @@ $(document).ready(function(){
         $('.navbar .menu').removeClass('active')
         $('.menu-btn i').removeClass("active")
     })
+    $('.menu a').click(function(){
+        $(".menu").collapse('hide');
+    });
 
     $(".nav-about").click(function() {
         $('html, body').animate({
@@ -48,8 +51,11 @@ $(document).ready(function(){
             scrollTop: $("#Projects").offset().top
         }, 1000);
     });
-
-    $('.menu a').click(function(){
-        $(".menu").collapse('hide');
+    $(".nav-contact").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#Contact").offset().top
+        }, 1000);
     });
+
+    
 })

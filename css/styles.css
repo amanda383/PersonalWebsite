@@ -43,7 +43,7 @@
     display: block;
     color: #FFFFFF;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     margin-left: 25px;
     text-decoration: none;
 }
@@ -176,7 +176,7 @@ section{
     flex-wrap: wrap;
     text-align: justify;
     word-break: break-all;
-    font-size: 17px;
+    font-size: 20px;
     
 }
 
@@ -299,7 +299,42 @@ section{
    font-size: 20px;
 }
 
+.contact{
+    display: flex;
+   background: #c7c3c3 no-repeat center;
+   height: 100vh;
+   color: #FFFFFF;
+   min-height: 500px; 
+   justify-content: center;
+   align-items: center; 
+
+}
+
+.contact .title{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    /* margin-bottom: 60px; */
+    padding-bottom: 20px;
+    font-family: 'Roboto',sans-serif;
+    color: #FFFFFF;
+}
+
 @media (max-width: 375px){
+    .about .about-content .right .text{
+        font-size: 25px;
+        font-weight: 600;
+      margin-top: -20px;
+    }
+
+    .about .about-content .right p{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: justify;
+        word-break: break-all;
+        font-size: 15px;
+        
+    }
     .experience .work-experience{
         margin-bottom: 20px; 
         font-family: 'Roboto', sans-serif;
