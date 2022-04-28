@@ -33,6 +33,12 @@ $(document).ready(function(){
         }, 1000);
     });
 
+    $(".nav-projects").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#Projects").offset().top
+        }, 1000);
+    });
+
     $('.menu a').click(function(){
         $(".menu").collapse('hide');
     });
