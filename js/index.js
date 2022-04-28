@@ -21,7 +21,11 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active")
     })
 
-    
+    $('.menu-item a').click(function(){
+        $('.navbar .menu').removeClass('active')
+        $('.menu-btn i').removeClass("active")
+    })
+
     $(".nav-about").click(function() {
         $('html, body').animate({
             scrollTop: $("#About").offset().top
