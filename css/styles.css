@@ -273,6 +273,68 @@ section{
     color: #FFFFFF;
 }
 
+.project .project-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-between;
+}
+.project .project-column{
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+    padding: 30px;
+}
+.project .project-column img{
+    width: 500px;
+    height: 300px;
+}
+
+.project .project-column a{
+    display: flex;
+    position: absolute;
+    margin-top: 22%;
+    text-decoration: none;
+   color: #FFFFFF;
+   font-size: 20px;
+}
+
+@media (max-width: 375px){
+    .experience .work-experience{
+        margin-bottom: 20px; 
+        font-family: 'Roboto', sans-serif;
+        margin-top: -35px;
+    }
+
+.experience .experience-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-between;
+}
+    .experience .experience-content-left{
+        font-size: 20px;
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+    
+    }
+    .experience .experience-content-right{
+        font-size: 15px;
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        font-weight: 300;
+    }
+    .project .project-column a{
+        display: flex;
+        position: absolute;
+        margin-top: 45%;
+        
+    }
+}
+    
 
 
 @media(max-width: 500px){
@@ -305,6 +367,26 @@ section{
         flex-wrap: wrap;
         align-items: flex-start;
         font-weight: 300;
+    }
+    .project .project-column{
+        display: flex;
+        justify-content: left;
+        align-items: baseline;
+       margin: auto;
+    }
+
+    .project .project-column img{
+        width: 300px;
+        height: 200px;
+    }
+    
+    .project .project-column a{
+        display: flex;
+        position: absolute;
+        margin-top: 60%;
+        text-decoration: none;
+       color: #FFFFFF;
+       font-size: 20px;
     }
 
 }
@@ -470,15 +552,31 @@ section{
         max-width: 800px;
     }
 
-    .experience .work-experience{
-        font-size: 20px;
-        text-align: start;
-    }
+
 
     .experience .experience-content .column{
         width: 100%;
     }
 
+    .project .project-column{
+        display: flex;
+        justify-content: left;
+        align-items: baseline;
+       margin: auto;
+    }
+
+    /* .project .project-column img{
+        width: 400px;
+        height: 200px;
+    } */
+    
+    .project .project-column a{
+        display: flex;
+        position: absolute;
+        margin-top: 200px;
+
+      
+    }
 
 
 }
