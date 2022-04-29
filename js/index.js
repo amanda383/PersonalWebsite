@@ -5,6 +5,7 @@ crossorigin="anonymous"
 script.type = 'text/javascript';
 document.getElementsByTagName('head')[0].appendChild(script);
 
+
 $(document).ready(function(){
     $(window).scroll(function(){
         if(this.scrollY>20){
@@ -57,5 +58,4 @@ $(document).ready(function(){
         }, 1000);
     });
 
-    
 })
