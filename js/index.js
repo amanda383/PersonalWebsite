@@ -12,7 +12,7 @@ function sendEmail(params){
         message:document.getElementById("message").value
     };
     emailjs.send('service_n1pdoni','template_591ndcn', tempParams ).then(function(res){
-        alert('Success')
+        alert('Success');
         console.log("success", res.status)
     })
 
