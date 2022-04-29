@@ -374,7 +374,7 @@ input[value="SEND MESSAGE"]{
     font-weight: 700;
 }
 
-@media (max-width: 380px){
+@media (max-width: 384px){
     .about .about-content .right .text{
         font-size: 25px;
         font-weight: 600;
