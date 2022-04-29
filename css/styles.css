@@ -355,7 +355,7 @@ textarea{
     border: transparent;
     display: flex;
     flex-direction: column;
-    padding: 2%;
+    padding: 0% 0% 2% 0%;
     margin: 0%;
     text-decoration: none;
 
@@ -365,6 +365,7 @@ textarea{
     width: 700px;
     height: 50px;
     margin-top: 30px;
+    padding: 0%;
 }
 
 input[value="SEND MESSAGE"]{
@@ -373,7 +374,7 @@ input[value="SEND MESSAGE"]{
     font-weight: 700;
 }
 
-@media (max-width: 375px){
+@media (max-width: 380px){
     .about .about-content .right .text{
         font-size: 25px;
         font-weight: 600;
@@ -422,11 +423,8 @@ input[value="SEND MESSAGE"]{
         
     }
 
-    .contact .submit-group input{
-        width: 100%;
-        height: 50px;
-        margin-top: 30px;
-    }
+
+
 }
     
 
@@ -482,27 +480,7 @@ input[value="SEND MESSAGE"]{
        color: #FFFFFF;
        font-size: 20px;
     }
-
-    .contact .form-group{
-        width: 100%;
-        border: transparent;
-        display: flex;
-        flex-direction: column;
-        padding-top: 2%;
-        margin-left: 20px;
-        
-        text-decoration: none;
-    
-    }
-    .contact .submit-group input{
-        display: flex;
-        width: 300px;
-        height: 50px;
-        margin-top: 30px;
-   
-        margin-left: 20px;
   
-    }
 
 }
 
@@ -540,6 +518,8 @@ input[value="SEND MESSAGE"]{
         align-items: flex-start;
         font-weight: 300;
     }
+
+
 
 }
 
@@ -693,5 +673,29 @@ input[value="SEND MESSAGE"]{
       
     }
 
+    .contact form{
+        margin: auto;
+    }
+    
+    .contact .contact-content .form-group{
+        width: 300px;
+        /* border: transparent;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0%;
+        text-decoration: none; */
+         /* display: flex;
+        width: 300px;
+        margin: auto;  */
+        /* width: max-content; */
+        display: flex;
+       margin: auto;
+       margin-left: auto;
 
+    }
+
+   .contact .contact-content .submit-group input{
+        width: 300px;
+   }
 }
