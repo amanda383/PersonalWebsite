@@ -17,6 +17,7 @@ function sendEmail(params){
         console.log("success", res.status)
     })
 
+    alert("success")
 }
 
 $(document).ready(function(){
@@ -70,5 +71,6 @@ $(document).ready(function(){
             scrollTop: $("#Contact").offset().top
         }, 1000);
     });
+
 
 })
