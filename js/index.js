@@ -12,9 +12,6 @@ function sendEmail(params){
         message:document.getElementById("message").value,
         email:document.getElementById("email").value
     };
-    if(tempParams==true){
-        alert('Success');
-    }
     emailjs.send('service_n1pdoni','template_591ndcn', tempParams ).then(function(res){
         alert('Success');
         console.log("success", res.status)
