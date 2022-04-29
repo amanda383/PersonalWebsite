@@ -13,8 +13,8 @@ function sendEmail(params){
     };
     emailjs.send('service_n1pdoni','template_591ndcn', tempParams ).then(function(res){
         console.log("success", res.status)
+        alert('success')
     })
-    alert('success')
 }
 
 $(document).ready(function(){
