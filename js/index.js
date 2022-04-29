@@ -5,6 +5,16 @@ crossorigin="anonymous"
 script.type = 'text/javascript';
 document.getElementsByTagName('head')[0].appendChild(script);
 
+function sendEmail(params){
+    var tempParams = {
+        from_name:document.getElementById("firstname").value,
+        from_lastname:document.getElementById("lastname").value,
+        message:document.getElementById("message").value
+    };
+    emailjs.send('service_n1pdoni','template_591ndcn', tempParams ).then(function(res){
+        console.log("success", res.status)
+    })
+}
 
 $(document).ready(function(){
     $(window).scroll(function(){
