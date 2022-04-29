@@ -9,8 +9,8 @@ function sendEmail(params){
     var tempParams = {
         from_name:document.getElementById("firstname").value,
         from_lastname:document.getElementById("lastname").value,
+        email:document.getElementById("email").value,
         message:document.getElementById("message").value,
-        email:document.getElementById("email").value
     };
     emailjs.send('service_n1pdoni','template_591ndcn', tempParams ).then(function(res){
         console.log("success", res.status)
