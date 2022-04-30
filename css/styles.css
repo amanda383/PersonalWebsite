@@ -368,6 +368,11 @@ textarea{
     padding: 0%;
 }
 
+.contact  #status{
+    display: flex;
+    justify-content: center;
+}
+
 input[value="SEND MESSAGE"]{
     color: #9e9898;
     font-size: 15px;

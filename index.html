@@ -11,14 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/index.js"></script>
     <link rel="stylesheet" href="css/styles.css">
-    <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function(){
-        emailjs.init("1IEOF5bER26g76oyB");
-        })();
-    </script>
+    
 </head>
 <body>
     <nav class="navbar">
@@ -141,7 +134,7 @@
         <h1 class="intro">Want to contact me? Shoot me an Email :)</h1>
      
         <div class="contact-content">
-           <form action="" method="GET" class="form">
+           <form action="https://formspree.io/f/xyyobndz" method="POST" class="form" id="my-form">
                <div class="form-group">
                    <label for="firstname">First Name</label>
                    <input 
@@ -165,10 +158,10 @@
                 <div class="form-group">
                     <label for="email">Email address</label>
                     <input 
-                        type="email" 
+                        type="text" 
                         name="email" 
                         id="email" 
-                        required 
+                        required
                         class="form-element"
                         placeholder="Paul.doe@example.com">
                 </div>
@@ -178,14 +171,13 @@
                 </div>
 
                 <div class="submit-group form-group">
-                    <input onclick="sendEmail()" type="submit" value="SEND MESSAGE">
+                    <input type="submit" value="SEND MESSAGE">
                    
                 </div>
 
            </form>
-            
             </div>
-
+            <div id="status"></div>
         </div>
     </div>
 </section>

@@ -5,18 +5,6 @@ crossorigin="anonymous"
 script.type = 'text/javascript';
 document.getElementsByTagName('head')[0].appendChild(script);
 
-function sendEmail(params){
-    var tempParams = {
-        from_name:document.getElementById("firstname").value,
-        from_lastname:document.getElementById("lastname").value,
-        email:document.getElementById("email").value,
-        message:document.getElementById("message").value,
-    };
-    emailjs.send('service_n1pdoni','template_591ndcn', tempParams ).then(function(res){
-        console.log("success", res.status)
-    })
-
-}
 
 $(document).ready(function(){
     $(window).scroll(function(){
@@ -70,5 +58,35 @@ $(document).ready(function(){
         }, 1000);
     });
 
-
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+          
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
 })
